@@ -1,0 +1,13 @@
+### uso la shell bash per avere l'history e il completamento dei comandi
+> bash
+### faccio partire l'agent che e' gia' installato nel server notebook
+> eval `oidc-agent`
+### controllo se c'e' un profilo attivo
+> oidc-gen -l
+### configuro un profilo demo (nome a scelta)
+> oidc-gen demo
+### rispondiamo alle domande che ritorna il comando ovvero come issuer va indicato https://iam.cloud.infn.it/ e come scope mettere max
+### autorizzare il client andando al link https://iam.cloud.infn.it/device ed inserire il codice ritornato dal comando.
+### precedere mettendo password per criptare configurazioni
+### installare boto3-sts
+> pip install -U git+https://git@github.com/dodas-ts/boto3sts
